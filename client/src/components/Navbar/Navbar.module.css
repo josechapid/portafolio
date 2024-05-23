@@ -1,0 +1,16 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    background: #344F95  ;
+    height: 50px;
+}
+
+.name{
+    color: white
+}
+
+.logoJL{
+    height: 50px;
+}
