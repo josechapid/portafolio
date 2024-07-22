@@ -5,9 +5,6 @@ import Technologies from './components/Technologies/Technologies';
 import Education from './components/Education/Education';
 import Footer from "./components/Footer/Footer";
 
-
-
-
 function App() {
   
   return (

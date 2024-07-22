@@ -1,0 +1,58 @@
+/* ProjectCard.module.css */
+.projectCard {
+    display: flex;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  overflow: hidden;
+  width: 800px;
+  background-color: #fff;
+  transition: transform 0.3s;
+}
+.projectCard:hover {
+  transform: scale(1.02);
+}
+
+.projectImage {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+.projectDetails {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projectTitle {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.projectInfo {
+  font-size: 1.4rem;
+  margin: 10px 0;
+  color: #666;
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.techItem {
+  background-color: #6200ea;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 1.2rem;
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+}

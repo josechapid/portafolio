@@ -1,0 +1,40 @@
+.technologyCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  overflow: hidden;
+  max-width: 150px;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.3s;
+}
+
+.technologyCard:hover {
+  transform: scale(1.05);
+}
+
+.technologyImage {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.technologyTitle {
+  font-size: 1.6rem;
+  margin: 10px 0;
+  color: #333;
+}
+.technologySection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+.technologies{
+    display: flex;
+}
