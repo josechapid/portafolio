@@ -1,29 +1,36 @@
-import { Link, useNavigate } from "react-router-dom";
+import React from "react";
 import styles from "./Navbar.module.css"
 
+
 function NavBar(){
-    const navigate= useNavigate()
+    
 
     return (
-      <div className={styles.navbar}>
-        <div className={styles.name}>
-          <h1>JoseChapid</h1>
+      <header className={styles.header}>
+        <div className={styles.container}>
+          <div className={styles.barra}>
+            <a href="#about" className={styles.logo}>
+              <h1 className={styles.logo_nombre}>
+                Dev<span className={styles.bold}>Web</span>
+              </h1>
+            </a>
+            <nav className={styles.navegacion}>
+              <a href="#about" className={styles.navbar_enlace}>
+                Acerca de mí
+              </a>
+              <a href="#technologies" className={styles.navbar_enlace}>
+                Tecnologías
+              </a>
+              <a href="#projects" className={styles.navbar_enlace}>
+                Proyectos
+              </a>
+              <a href="#education" className={styles.navbar_enlace}>
+                Educación
+              </a>
+            </nav>
+          </div>
         </div>
-        <div className={styles.links}>
-          <Link to={"/about"} className={styles.navLink}>
-            <button>About</button>
-          </Link>
-          <Link to={"/proyects"} className={styles.navLink}>
-            <button>Proyectos</button>
-          </Link>
-          <Link to={"/tecnologias"} className={styles.navLink}>
-            <button>Tecnologias</button>
-          </Link>
-          <Link to={"/educacion"} className={styles.navLink}>
-            <button>Educacion</button>
-          </Link>
-        </div>
-      </div>
+      </header>
     );
 }
 

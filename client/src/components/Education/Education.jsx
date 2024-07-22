@@ -1,4 +1,8 @@
 function Education() {
-  return <section></section>;
+  return (
+  <section>
+    <h3>Educación</h3>
+  </section>
+  );
 }
 export default Education;

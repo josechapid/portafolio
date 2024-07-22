@@ -1,16 +1,51 @@
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    align-items: center;
-    background: #344F95  ;
-    height: 50px;
+.header{
+    background-image: url("../../assets/logos/josechapid.jpg");
+    mask-image:  linear-gradient(
+        black 95%,
+        transparent
+    );
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.barra{
+    padding-top: 4rem;
+    padding: 4rem 4rem;
 }
 
-.name{
-    color: white
+@media (min-width:768px) {
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.logo{
+    color:var(--blanco);
+}
+.logo_nombre{
+    font-weight: normal;
+}
+.bold{
+    font-weight: bold;
+}
+@media (min-width:768px) {
+    .navegacion {
+        display: flex;
+        gap: 4rem;
+    }    
+}
+.navbar_enlace{
+    color: var(--blanco);
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
 }
 
-.logoJL{
-    height: 50px;
+.navegacion a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+    padding: 0.7rem;
 }
