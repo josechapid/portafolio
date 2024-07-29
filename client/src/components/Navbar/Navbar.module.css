@@ -1,14 +1,35 @@
 .header{
+    background-color: var(--negro);
+     mask-image:  linear-gradient(
+        black 95%,
+        transparent
+    );
+}
+@media (min-width:768px) {
+    .header{
     background-image: url("../../assets/logos/josechapid.jpg");
     mask-image:  linear-gradient(
         black 95%,
         transparent
     );
-    height: 60rem;
+    height: 45rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
+}
+
+/* .header{
+    background-image: url("../../assets/logos/josechapid.jpg");
+    mask-image:  linear-gradient(
+        black 95%,
+        transparent
+    );
+    height: 45rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+} */
 .barra{
     padding-top: 4rem;
     padding: 4rem 4rem;
@@ -23,6 +44,7 @@
 }
 .logo{
     color:var(--blanco);
+    text-align: center;
 }
 .logo_nombre{
     font-weight: normal;

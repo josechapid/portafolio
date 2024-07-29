@@ -37,7 +37,7 @@ function About() {
                 src="../../../public/github-mark.svg"
                 alt="logo"
               />
-              {/* <p>GitHub</p> */}
+              
             </a>
             <a
               href="https://www.linkedin.com/in/jose-luis-chapid/"
@@ -50,7 +50,7 @@ function About() {
                 alt="logo"
               />
 
-              {/* <p>LinkendIn</p> */}
+              
             </a>
           </div>
         </div>

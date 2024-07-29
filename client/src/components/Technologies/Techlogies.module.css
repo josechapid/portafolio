@@ -4,9 +4,8 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 20px;
   overflow: hidden;
-  max-width: 150px;
   text-align: center;
-  background-color: #fff;
+  background-color: #fcfcfc;
   transition: transform 0.3s;
 }
 
@@ -17,7 +16,7 @@
 .technologyImage {
   width: 100%;
   height: 100px;
-  object-fit: cover;
+  object-fit: contain;
   padding: 10px;
 }
 
@@ -29,12 +28,16 @@
 .technologySection {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 20px;
   background-color: #f9f9f9;
 }
 .technologies{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 5px;
+    justify-items: center;
+    width: 100%;
+    max-width: 1000px;
 }
