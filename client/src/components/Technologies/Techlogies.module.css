@@ -32,6 +32,8 @@
   align-items: center;
   padding: 20px;
   background-color: #f9f9f9;
+  width: min(90%, 120rem);    
+    margin: 0 auto; /* utilizado para centrar */
 }
 .technologies{
     display: grid;

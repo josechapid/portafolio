@@ -9,7 +9,7 @@ function NavBar(){
       <header className={styles.header}>
         <div className={styles.container}>
           <div className={styles.barra}>
-            <a href="#about" className={styles.logo}>
+            <a href="#navBar" className={styles.logo}>
               <h1 className={styles.logo_nombre}>
                 Dev<span className={styles.bold}>Web</span>
               </h1>

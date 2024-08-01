@@ -1,5 +1,6 @@
 .container {
-  padding: 2rem;
+  width: min(90%, 120rem);    
+    margin: 0 auto; /* utilizado para centrar */
 }
 
 .title {

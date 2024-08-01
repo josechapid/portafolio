@@ -4,12 +4,13 @@ import Projects from './components/Projects/Projects';
 import Technologies from './components/Technologies/Technologies';
 import Education from './components/Education/Education';
 import Footer from "./components/Footer/Footer";
+import ContactMe from './components/ContactMe/ContactMe';
 
 function App() {
   
   return (
     <>
-      <Navbar />
+      <Navbar id="navBar" />
       <main>
         <section id="about">
           <About />
@@ -22,6 +23,9 @@ function App() {
         </section>
         <section id="education">
           <Education />
+        </section>
+        <section id="contactMe">
+          <ContactMe/>
         </section>
       </main>
       <Footer />

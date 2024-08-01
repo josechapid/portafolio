@@ -1,3 +1,8 @@
+.container{
+    width: min(90%, 120rem);    
+    margin: 0 auto; /* utilizado para centrar */
+}
+
 .perfil{
     padding: 2rem;
     margin-top: 0 ;
@@ -9,7 +14,7 @@
         grid-template-columns: 1fr 2fr;
         column-gap: 4rem;
         align-items: center;
-        padding: 4rem;
+        
        
     }
 }

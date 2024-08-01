@@ -7,7 +7,7 @@ const Projects = () => {
       image:
         "https://res.cloudinary.com/dlasrjiei/image/upload/v1721618824/Captura_de_pantalla_2024-07-21_222645_lpwsbt.png", // Reemplaza con la URL de tu imagen
       title: "DeliVeloz",
-      info: "Desarrollo de un e-commerce de comida rápida, sus funcionalidades incluyen pasarela de pago, dashboard de usuario y administrador, valoración de productos, y muchas más.",
+      info: "Desarrollo de un E-commerce de comida rápida, sus funcionalidades incluyeron pasarela de pago, Dashboard de usuario y administrador, Deploy, Autenticación local y de terceros, filtros combinados, valoración de productos, Local Storage, notificaciones, borrado lógico.",
       technologies: [
         "React",
         "JavaScript",
@@ -19,6 +19,7 @@ const Projects = () => {
         "Tailwind",
         "NodeJs",
       ],
+      videoLink: "https://youtu.be/nwZHkYNf8XE",
     },
     {
       image:
@@ -36,6 +37,23 @@ const Projects = () => {
         "Tailwind",
         "NodeJs",
       ],
+      videoLink: "https://youtu.be/qceQSv3Xlio",
+    },
+    {
+      image:
+        "https://res.cloudinary.com/dlasrjiei/image/upload/v1722523597/Captura_de_pantalla_2024-08-01_094322.png", // Reemplaza con la URL de tu imagen
+      title: "BlogCafé",
+      info: "Plantillas de diseño responsivo para proyectos",
+      technologies: ["HTML", "CSS"],
+      videoLink: "https://coffe-jchapid.netlify.app/",
+    },
+    {
+      image:
+        "https://res.cloudinary.com/dlasrjiei/image/upload/v1722523813/Captura_de_pantalla_2024-08-01_094959.png", // Reemplaza con la URL de tu imagen
+      title: "ShirtStore",
+      info: "Plantillas de diseño responsivo para proyectos",
+      technologies: ["HTML", "CSS"],
+      videoLink: "https://shirt-jchapid.netlify.app",
     },
   ];
 
@@ -43,21 +61,34 @@ const Projects = () => {
     <section className={styles.projectSection}>
       <h3>Proyectos</h3>
       <div className={styles.projects}>
-       {projects.map((project, index) => (
-        <div key={index} className={styles.projectCard}>
-          <img src={project.image} alt={project.title} className={styles.projectImage} />
-          <div className={styles.projectDetails}>
-            <h2 className={styles.projectTitle}>{project.title}</h2>
-            <p className={styles.projectInfo}>{project.info}</p>
-            <div className={styles.techList}>
-              {project.technologies.map((tech, techIndex) => (
-                <span key={techIndex} className={styles.techItem}>{tech}</span>
-              ))}
+        {projects.map((project, index) => (
+          <a
+            key={index}
+            href={project.videoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
+            <div key={index} className={styles.projectCard}>
+              <img
+                src={project.image}
+                alt={project.title}
+                className={styles.projectImage}
+              />
+              <div className={styles.projectDetails}>
+                <h2 className={styles.projectTitle}>{project.title}</h2>
+                <p className={styles.projectInfo}>{project.info}</p>
+                <div className={styles.techList}>
+                  {project.technologies.map((tech, techIndex) => (
+                    <span key={techIndex} className={styles.techItem}>
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      ))}
-             
+          </a>
+        ))}
       </div>
     </section>
   );
