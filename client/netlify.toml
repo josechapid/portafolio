@@ -1,4 +1,4 @@
 [build]
-  base = "./dist"
+  base = "."
   command = "npm install --force && npm run build"
-  publish = "client/dist"
+  publish = "dist"
