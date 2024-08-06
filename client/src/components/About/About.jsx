@@ -35,7 +35,7 @@ function About() {
             >
               <img
                 className={styles.logos_image}
-                src="../../../public/github-mark.svg"
+                src="../../assets/logos/github-mark.svg"
                 alt="logo"
               />
             </a>
@@ -46,7 +46,7 @@ function About() {
             >
               <img
                 className={styles.logos_image}
-                src="../../../public/linkedin-icon-2.svg"
+                src="../../assets/logos/linkedin-icon-2.svg"
                 alt="logo"
               />
             </a>
