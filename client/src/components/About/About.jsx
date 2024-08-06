@@ -14,7 +14,7 @@ function About() {
 
         <div className={styles.perfil_texto}>
           <p>
-            FullStack Developer con sólidos conocimientos en JavaScript, HTML,
+            fullStack Developer con sólidos conocimientos en JavaScript, HTML,
             SQL, Postgrest, Sequelize y Express. He trabajado en proyectos
             ágiles tanto en el Front-end como el Back-end con tecnologías como
             NodeJs, React, React Native, Redux, Express, creando interfaces de
