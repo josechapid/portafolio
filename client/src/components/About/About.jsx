@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './About.module.css'
 
 import perfil from "../../assets/logos/joseperfil.jpg"
+import linkedin from "../../assets/logos/linkedin-icon-2.svg"
+import github from "../../assets/logos/github-mark.svg"
 
 function About() {
   return (
@@ -14,7 +16,7 @@ function About() {
 
         <div className={styles.perfil_texto}>
           <p>
-            fullStack Developer con sólidos conocimientos en JavaScript, HTML,
+            FullStack Developer con sólidos conocimientos en JavaScript, HTML,
             SQL, Postgrest, Sequelize y Express. He trabajado en proyectos
             ágiles tanto en el Front-end como el Back-end con tecnologías como
             NodeJs, React, React Native, Redux, Express, creando interfaces de
@@ -35,7 +37,7 @@ function About() {
             >
               <img
                 className={styles.logos_image}
-                src="../../assets/logos/github-mark.svg"
+                src={github}
                 alt="logo"
               />
             </a>
@@ -46,7 +48,7 @@ function About() {
             >
               <img
                 className={styles.logos_image}
-                src="../../assets/logos/linkedin-icon-2.svg"
+                src={linkedin}
                 alt="logo"
               />
             </a>
